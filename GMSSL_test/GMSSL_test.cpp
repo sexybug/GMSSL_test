@@ -5,6 +5,7 @@
 #include "sm2.h"
 #include "sm3.h"
 #include "sm4.h"
+#include "sca.h"
 
 #include <iostream>
 
@@ -244,17 +245,19 @@ void sm2_verify_hash_test()
 
 int main()
 {
-	sm2_compute_pub_key_test();
-	sm2_enc_dec_test();
-	sm2_dec_test();
-	sm2_sign_verify_test();
-	sm2_verify_test();
-	sm2_sign_verify_hash_test();
-	sm2_verify_hash_test();
+	//sm2_compute_pub_key_test();
+	//sm2_enc_dec_test();
+	//sm2_dec_test();
+	//sm2_sign_verify_test();
+	//sm2_verify_test();
+	//sm2_sign_verify_hash_test();
+	//sm2_verify_hash_test();
 	//test_sm3_hash();
 	//test_sm3_hmac();
 	//test_sm4_ecb();
 	//test_sm4_cbc();
+
+	sm2_sign_sca_test();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
